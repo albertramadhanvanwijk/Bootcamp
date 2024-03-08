@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <title>Bootcamp Otsuka</title>
+</head>
+
+<body>
+    <section id="container">
+        <img src="./assets/profile.jpg" alt="Foto Profil">
+        <div class="profile">
+            <h1 id="namaProfil">Profil Saya</h1>
+            <div class="data-profile">
+                <p><strong>Nama:</strong> <span id="nama"></span></p>
+                <p><strong>Domisili:</strong> <span id="domisili"></span></p>
+                <p><strong>Kampus:</strong> <span id="kampus"></span></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="container">
+        <table id="quotesTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Quote</th>
+                    <th>Author</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+        </table>
+    </section>
+
+    <section id="container">
+        <table id="quotesTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Quote</th>
+                    <th>Author</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody2"></tbody>
+        </table>
+    </section>
+
+    <section id="container">
+        <div class="quote-container">
+            <div class="quote-card" id="card1">
+                <p class="cardTitle"></p>
+                <p class="cardQuote"></p>
+                <p class="cardAuthor"></p>
+            </div>
+
+            <div class="quote-card" id="card2">
+                <p class="cardTitle"></p>
+                <p class="cardQuote"></p>
+                <p class="cardAuthor"></p>
+            </div>
+
+            <div class="quote-card" id="card3">
+                <p class="cardTitle"></p>
+                <p class="cardQuote"></p>
+                <p class="cardAuthor"></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="containerTableSearch">
+        <input type="text" id="searchInput" placeholder="Search...">
+        <button id="searchButton">Search</button>
+        <h2>Search History</h2>
+        <ul id="historyList"></ul>
+        <table id="quotesTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Title</th>
+                    <th>Reactions</th>
+                </tr>
+            </thead>
+            <tbody id="postsTableBody"></tbody>
+        </table>
+    </section>
+
+    <section id="containerChart">
+        <div id="top5Chart"></div>
+    </section>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>
